@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <style type="text/css">
+	.divTopBox{ height: 279px;}
+	.query{background-color: #015604; text-align: center; height: 36px;margin-top: 3;}
+	.query_button{width: 273px; background-color: #22ad28; height: 36px; border-radius: 25px;}
+	.tableItem{ margin-top: 36px;}
+	.tableBox{width: 100%;}
+	.tableBox tr{line-height: 33px;}
+	table tr td { border-top:1px solid #606d7345;}
+    table { width: 200px; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
+	.td-left{padding-left: 420px;}
+	.td-right{padding-right: 396px;}
+	input{border-width: 0;}
+	.topImgDiv{height: 99px; margin-top: 9px;}
+	.quickBorrowDiv{height: 120px;}
+	li{width: 340px; height: 100px; float: left;}
+	.fist_li{ margin-left: 245px;}
+	h2{width: 120px; margin-left: 12px;}
+	.quick_know{ background: url(image/icon-bg.png) no-repeat; background-position-y: -129px; height: 54px; background-size: 95px 871px;}
+	.borrowd_one_minit{background: url(image/oneminit.png) no-repeat; background-size: 64px 64px; height: 54px; background-position-y: -3px;}
+	.get_money{background: url(image/icon-bg.png) no-repeat; background-position-y: -64px; height: 54px;}
+	
+  </style>
+</head>
+<script type="text/javascript">
+	function query(){
+		window.location.href="result.html";
+	}
+</script>
+<body>
+
+<div>
+  <div class="divTopBox">
+	<div class="topImgDiv">
+		<img style="margin-left:480px; vertical-align: middle;" src="image/weilidai.jpg" height="120px" width="120px">
+		<span style="font-size: 54px; vertical-align: middle; display: inline-block; margin-top: 27px;">微&nbsp;粒&nbsp;贷</span>
+		
+	</div>
+	<div class="quickBorrowDiv">
+		<ul style="list-style-type: none;">
+			<li class="fist_li">
+				<h2 class="quick_know"></h2>
+				<h4>5秒出额度</h4>
+			</li>
+			<li>
+				<h2 class="borrowd_one_minit"></h2>
+				<h4>1分钟借钱</h4>
+			</li>
+			<li>
+				<h2 class="get_money"></h2>
+				<h4>现金到账</h4>
+			</li>
+		</ul>
+	</div>
+  </div>
+  <div class="tableItem">
+	<table class="tableBox">
+		<tr>
+			<td class="td-left">
+				<span>身份证:</span>
+			</td>
+			<td class="td-right">
+				<span><input type="text" value="420000199101010121" name="sfzh"/></span>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-left">
+				<span>手机号:</span>
+			</td>
+			<td class="td-right">
+				<span><input type="text" value="12345678901" name="phone"/></span><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-left">
+				<span>微信号:</span>
+			</td>
+			<td class="td-right">
+				<span><input type="text" value="12345678901" name="weichart"/></span><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="td-left">
+				<span style="padding-left: 42px;">邀请码:<span style="color:red; font-size: 10px;">(勿泄露)</span>
+			</td>
+			<td class="td-right">
+				<span><input type="text" value="GOWG" name="invite_code" /></span><br>
+			</td>
+		</tr>
+	</table>
+  </div>
+  <div>
+	<div class="query">
+		<input class="query_button" type="button" value="立即查询" onclick="query()"/>
+	</div>
+  </div>
+ </div>
+</body>
+
+</html>
