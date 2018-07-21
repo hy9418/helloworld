@@ -2,10 +2,11 @@
 
 <head>
   <style type="text/css">
+	body{margin: 0 auto;}
 	.divTopBox{ height: 279px;}
 	.query{background-color: #015604; text-align: center; height: 36px;margin-top: 3;}
 	.query_button{width: 273px; background-color: #22ad28; height: 36px; border-radius: 25px;}
-	.tableItem{ margin-top: 36px;}
+	.tableItem{ margin-top: 24px;}
 	.tableBox{width: 100%;}
 	.tableBox tr{line-height: 33px;}
 	table tr td { border-top:1px solid #606d7345;}
@@ -13,15 +14,16 @@
 	.td-left{padding-left: 420px;}
 	.td-right{padding-right: 396px;}
 	input{border-width: 0;}
-	.topImgDiv{height: 99px; margin-top: 9px;}
-	.quickBorrowDiv{height: 120px;}
-	li{width: 340px; height: 100px; float: left;}
-	.fist_li{ margin-left: 245px;}
+	.topImgDiv{height: 99px; margin-top: 9px; text-align: center;}
+	.quickBorrowDiv{height: 120px; text-align: center; margin-top: 12px;}
+	li{width: 300px; height: 100px; float: left;}
+	.fist_li{ }
 	h2{width: 120px; margin-left: 12px;}
 	.quick_know{ background: url(image/icon-bg.png) no-repeat; background-position-y: -129px; height: 54px; background-size: 95px 871px;}
 	.borrowd_one_minit{background: url(image/oneminit.png) no-repeat; background-size: 64px 64px; height: 54px; background-position-y: -3px;}
 	.get_money{background: url(image/icon-bg.png) no-repeat; background-position-y: -64px; height: 54px;}
-	
+	.bottom-prompt{ font-weight: bold; font-size: 15px;}
+	.titleDivBox{height: 30px; background-color: #e8e4e4; text-align: center; font-size: 21px; font-weight: bold;}
   </style>
 </head>
 <script type="text/javascript">
@@ -32,14 +34,17 @@
 <body>
 
 <div>
+  <div class="titleDivBox">
+	<span>内部自助激活查询系统</span>
+  </div>
   <div class="divTopBox">
 	<div class="topImgDiv">
-		<img style="margin-left:480px; vertical-align: middle;" src="image/weilidai.jpg" height="120px" width="120px">
+		<img style=" vertical-align: middle;" src="image/weilidai.jpg" height="120px" width="120px">
 		<span style="font-size: 54px; vertical-align: middle; display: inline-block; margin-top: 27px;">微&nbsp;粒&nbsp;贷</span>
 		
 	</div>
 	<div class="quickBorrowDiv">
-		<ul style="list-style-type: none;">
+		<!--<ul style="list-style-type: none;">
 			<li class="fist_li">
 				<h2 class="quick_know"></h2>
 				<h4>5秒出额度</h4>
@@ -52,7 +57,19 @@
 				<h2 class="get_money"></h2>
 				<h4>现金到账</h4>
 			</li>
-		</ul>
+		</ul>-->
+		<div style="float: left; width: 20%; margin-left: 24%;">
+			<img src="image/icon-1.png" class="quick_know2" width="66" height="66"></img>
+			<h4>5秒出额度</h4>
+		</div>
+		<div style="float: left; width: 20%;"">
+			<img src="image/icon-2.png" class="quick_know2" width="66" height="66"></img>
+			<h4>1分钟借钱</h4>
+		</div>
+		<div style="float: left; width: 20%;"">
+			<img src="image/icon-3.png" class="quick_know2" width="66" height="66"></img>
+			<h4>现金到账</h4>
+		</div>
 	</div>
   </div>
   <div class="tableItem">
@@ -94,6 +111,12 @@
   <div>
 	<div class="query">
 		<input class="query_button" type="button" value="立即查询" onclick="query()"/>
+	</div>
+	<div style="text-align: center; margin-top: 24px;">
+		<span class="bottom-prompt">提示：使用本内部邀请链接查询微粒贷<span><br>
+		<span class="bottom-prompt">通过且有额度则百分百下款<span><br>
+		<span class="bottom-prompt">如没有额度请继续保持良好习惯<span><br>
+		<span class="bottom-prompt">切勿相信强开及其他售卖软件的骗子行为<span><br>
 	</div>
   </div>
  </div>
